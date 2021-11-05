@@ -1,4 +1,13 @@
 
-<h1> Server Works</h1>
-<button class="btn btn-class" [disabled] = "!allowNewServe" (click) = "onServerCreating()">Add new Server </button>
-<p>{{serverCreatingStatus}}</p>
+<h1> Please Add Country name to Active the server</h1>
+<div class="class">
+    <div class="row">
+        <input type ="text" class = "form-countrol" [(ngModel)] = "serverName"> 
+    </div>
+    <div class="row">
+        <button class="btn btn-class" [disabled] = "!allowNewServe" (click) = "onServerCreating()">Add new Server </button><br>
+        <p>{{serverCreatingStatus}} <!--In {{serverName}} --> </p>  <!-- The commited work as serve.component.ts serverstatus work-->
+    </div>
+</div>
+
+
